@@ -14,16 +14,36 @@
 <body>
   <div class="container">
     <h1>Welcome to the voter website.</h1>
-    <div class="voterage">
-      <form class="formOne">
-        <form id="formLetter" class="letter">
-          <div id="name">
-            <label for="voterage">How old are you?</label>
-            <input id="voterage" type="text" class="form-control">
-          </div>
 
-        </form>
+    <div>
+      <form id="formVoter" class="letter">
+        <div id="name">
+          <label for="voterAge">How old are you?</label>
+          <input id="voterAge" type="text" class="form-control">
+        </div>
+
+
+        <button type="submit" class="btn-primary">Submit</button>
+
+      </form>
     </div>
+
+
+    <div id="voterInfo">
+      <p>Congratulations, you are old enough to vote</p>
+      <p>Please proceed to your polling station located at:</p>
+      <p>(location)</p>
+      <p>on election day.</p>
+    </div>
+
+    <div id="minorInfo">
+      <p>Thanks for your interest in voting. Unfortunately, you are not yet old enough. Please see the links below
+        for preparing yourself to vote.</p>
+      <a href="google.com"></a>
+      <a href="google.com"></a>
+    </div>
+
   </div>
 </body>
+
 </html>

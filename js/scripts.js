@@ -1,16 +1,17 @@
 $(document).ready(function() {
-  event.preventDefault();
   $("#formVoter").submit(function(event) {
     const age = $("input#voterAge").val();
     const ageNumber = parseInt(age);
 
     if (ageNumber >= 18) {
       $('#voterInfo').show();
-    } else (ageNumber < 18) {
-
+    } else {
       $("#minorInfo").show();
     }
-
+      
+  event.preventDefault();
+  console.log(); 
+  
   });
 });
 
@@ -28,8 +29,3 @@ $(document).ready(function() {
 
 
     //event.preventDefault();
-
-  });
-
-  
-});
